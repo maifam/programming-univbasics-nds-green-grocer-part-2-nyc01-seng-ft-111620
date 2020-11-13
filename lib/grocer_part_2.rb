@@ -5,7 +5,8 @@ def apply_coupons(cart, coupons)
   coupons.each do |coupon| 
     current_item = find_item_by_name_in_collection(coupon[:item], cart)
       if current_item && current_item[:count] >= coupon[:num]
-        cart << {:item => current_item[:item] + "W/ COUPON", :price => coupon[:cost]/coupon[:num],
+        cart << {:item => current_item[:item] + "W/ COUPON", :price => coupon[:cost]/coupon[:num], :clearance => current_item[:clearance], :count => coupon[:num]}
+        current_item
 end 
 
 
