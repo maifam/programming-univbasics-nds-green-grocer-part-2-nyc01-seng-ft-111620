@@ -37,6 +37,7 @@ def apply_clearance(cart)
       cart[counter][:price] = (cart[counter][:price] - (cart[counter][:price] * 0.20)).round(2)
     end 
     
+    
 
 
 end
