@@ -38,6 +38,8 @@ def apply_clearance(cart)
     end 
   counter +=1 
   end 
+  cart 
+end 
 
     
     
