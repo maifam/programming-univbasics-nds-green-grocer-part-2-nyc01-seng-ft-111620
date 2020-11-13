@@ -2,8 +2,9 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   
-  count = 0 
-  while count < cart.length 
+  counter = 0 
+  while counter < cart.length 
+    cart_item = find_item_by_name_in_collection
   
 end
 
